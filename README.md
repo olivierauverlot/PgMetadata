@@ -9,8 +9,8 @@ PgMetadata requires the Garage framework. Don't forget to load it in your Pharo 
 
 The class PgMetadata returns a collection of SqlObjects thats describe the SQL schema. 
 
-| metadata sqlObjects |
-metadata := PgMetadata database: 'mydb' connection: (
+    | metadata sqlObjects |
+    metadata := PgMetadata database: 'mydb' connection: (
 	PgConnection
 		hostname: 'localhost'
 		port: 5432
