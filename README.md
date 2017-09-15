@@ -17,5 +17,5 @@ The class PgMetadata returns a collection of SqlObjects thats describe the SQL s
 		database: 'dbname'
 		user: 'username'
 		password: 'password'
-).
-sqlObjects := metadata extractMetadata.
+    ).
+    sqlObjects := metadata extractMetadata.
