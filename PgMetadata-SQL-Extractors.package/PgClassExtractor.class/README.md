@@ -1,0 +1,1 @@
+I'm the generic extractor for defines objects in pg_class

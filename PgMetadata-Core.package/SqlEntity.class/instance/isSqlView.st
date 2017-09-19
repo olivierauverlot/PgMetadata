@@ -1,0 +1,3 @@
+identity
+isSqlView
+	^false

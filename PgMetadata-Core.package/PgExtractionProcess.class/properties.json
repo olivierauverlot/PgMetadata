@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "OlivierAuverlot 6/8/2017 14:08",
+	"super" : "Object",
+	"category" : "PgMetadata-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"database",
+		"connection",
+		"steps"
+	],
+	"name" : "PgExtractionProcess",
+	"type" : "normal"
+}

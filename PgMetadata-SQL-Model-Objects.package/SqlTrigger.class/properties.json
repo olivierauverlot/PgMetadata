@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "OlivierAuverlot 6/29/2017 13:53",
+	"super" : "SqlObject",
+	"category" : "PgMetadata-SQL-Model-Objects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"table",
+		"function",
+		"type"
+	],
+	"name" : "SqlTrigger",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+I'm the extraction process. I collect all the objects in the database.

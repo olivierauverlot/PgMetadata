@@ -1,0 +1,3 @@
+identity
+isSqlExtension
+	^true

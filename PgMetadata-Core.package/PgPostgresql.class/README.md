@@ -1,0 +1,1 @@
+I contain useful informations about the PostgreSQL server instance.

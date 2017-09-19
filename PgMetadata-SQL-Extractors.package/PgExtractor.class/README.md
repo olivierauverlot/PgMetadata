@@ -1,0 +1,1 @@
+I'm the abstract class to define the object extractors

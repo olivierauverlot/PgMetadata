@@ -1,0 +1,1 @@
+I'm a function/cursor argument.

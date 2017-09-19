@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "PgMetadata-tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"db",
+		"schema",
+		"table",
+		"colname",
+		"colsurname",
+		"colage"
+	],
+	"name" : "PgDatabaseTest",
+	"type" : "normal"
+}

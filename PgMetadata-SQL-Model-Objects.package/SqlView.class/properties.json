@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "OlivierAuverlot 6/8/2017 15:15",
+	"super" : "SqlObjectInNamespace",
+	"category" : "PgMetadata-SQL-Model-Objects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"definition"
+	],
+	"name" : "SqlView",
+	"type" : "normal"
+}

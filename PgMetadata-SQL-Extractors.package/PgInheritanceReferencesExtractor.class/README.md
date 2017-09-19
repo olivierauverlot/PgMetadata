@@ -1,0 +1,1 @@
+I'm the inheritance references extractor.

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "OlivierAuverlot 7/6/2017 10:59",
+	"super" : "Object",
+	"category" : "PgMetadata-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"owner"
+	],
+	"name" : "SqlEntity",
+	"type" : "normal"
+}

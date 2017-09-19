@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "OlivierAuverlot 7/6/2017 10:33",
+	"super" : "SqlEntity",
+	"category" : "PgMetadata-SQL-Model-References",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"from",
+		"to"
+	],
+	"name" : "SqlReference",
+	"type" : "normal"
+}

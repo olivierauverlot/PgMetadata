@@ -1,0 +1,3 @@
+action
+extract
+	self subclassResponsibility 

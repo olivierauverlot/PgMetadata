@@ -1,0 +1,3 @@
+parameters
+sqlRequest
+	self subclassResponsibility 

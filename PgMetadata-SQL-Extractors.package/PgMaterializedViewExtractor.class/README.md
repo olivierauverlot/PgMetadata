@@ -1,0 +1,1 @@
+I'm the materialized View  extractor.

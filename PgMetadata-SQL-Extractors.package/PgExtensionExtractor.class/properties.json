@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "OlivierAuverlot 6/23/2017 15:39",
+	"super" : "PgExtractor",
+	"category" : "PgMetadata-SQL-Extractors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PgExtensionExtractor",
+	"type" : "normal"
+}

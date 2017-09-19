@@ -1,0 +1,1 @@
+I'm a PostgreSQL sequence.

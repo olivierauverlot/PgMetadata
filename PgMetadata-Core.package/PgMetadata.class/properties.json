@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "OlivierAuverlot 9/19/2017 08:05",
+	"super" : "Object",
+	"category" : "PgMetadata-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"database",
+		"connection"
+	],
+	"name" : "PgMetadata",
+	"type" : "normal"
+}

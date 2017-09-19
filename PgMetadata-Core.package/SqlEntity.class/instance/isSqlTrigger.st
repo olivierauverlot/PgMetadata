@@ -1,0 +1,3 @@
+identity
+isSqlTrigger
+	^false
