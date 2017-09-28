@@ -1,6 +1,6 @@
 action
 extract
-	self database getTables do: [ :table |
+	self database getColumnContainers do: [ :table |
 		(self runSQLWith: { table oid }) do: [ :result | 
 			| column dt |
 			column := SqlColumn oid: nil name: (result atName: #attname) owner: table.
