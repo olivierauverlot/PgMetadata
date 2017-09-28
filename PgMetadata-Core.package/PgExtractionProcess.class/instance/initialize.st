@@ -15,7 +15,7 @@ steps := {
 	PgTriggerExtractor.
 
 	"extract constraints"
-	PgConstraintExtractor.
+	PgFKConstraintExtractor.
 		
 	"extract references"
 	PgInheritanceReferencesExtractor.

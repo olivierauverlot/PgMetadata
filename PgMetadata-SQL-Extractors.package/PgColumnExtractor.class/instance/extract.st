@@ -3,7 +3,7 @@ extract
 	self database getTables do: [ :table |
 		(self runSQLWith: { table oid }) do: [ :result | 
 			| column dt |
-			column := SqlColumn oid: (result atName: 'oid') name: (result atName: #attname) owner: table.
+			column := SqlColumn oid: nil name: (result atName: #attname) owner: table.
 			column num: (result atName: 'attnum') asInteger.
 			column length: (result atName: 'attlen') asInteger.
 			column dimensions: (result atName: 'attndims') asInteger.
@@ -14,5 +14,6 @@ extract
 						
 			column datatype: (self database addUniqueObject: dt).
 			self database addObject: column. 
-		].
-	].
+			table addColumn: column.
+		]
+	]

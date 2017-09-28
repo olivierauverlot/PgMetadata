@@ -1,3 +1,6 @@
 accessing
 oid: anObject
-	oid := anObject asInteger
+	anObject 
+		ifNil: [ oid := nil ] 
+		ifNotNil: [ oid := anObject asInteger ]
+	
