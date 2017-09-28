@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "OlivierAuverlot 6/8/2017 15:15",
-	"super" : "SqlColumnsContainer",
+	"commentStamp" : "OlivierAuverlot 9/28/2017 10:18",
+	"super" : "SqlObjectInNamespace",
 	"category" : "PgMetadata-SQL-Model-Objects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"definition"
+		"columns"
 	],
-	"name" : "SqlView",
+	"name" : "SqlColumnsContainer",
 	"type" : "normal"
 }
