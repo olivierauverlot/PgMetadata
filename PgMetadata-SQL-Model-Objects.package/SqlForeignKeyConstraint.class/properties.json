@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "OlivierAuverlot 9/28/2017 13:14",
 	"super" : "SqlConstraint",
 	"category" : "PgMetadata-SQL-Model-Objects",
 	"classinstvars" : [ ],

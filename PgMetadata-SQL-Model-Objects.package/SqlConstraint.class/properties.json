@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "OlivierAuverlot 9/28/2017 13:13",
 	"super" : "SqlObjectInNamespace",
 	"category" : "PgMetadata-SQL-Model-Objects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"columns"
+	],
 	"name" : "SqlConstraint",
 	"type" : "normal"
 }

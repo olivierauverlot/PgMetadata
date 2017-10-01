@@ -8,4 +8,4 @@ extract
 						oid: (schema atName: #oid)
 						name: (schema atName: #relname)
 						owner: self database
-						namespace: (self database schemaReferenceOf: (schema atName: #relnamespace) asInteger)) ]
+						namespace: (self database schemaReferenceOf: (schema atName: #relnamespace))) ]

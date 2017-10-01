@@ -1,0 +1,3 @@
+identity
+conType
+	self subclassResponsibility 

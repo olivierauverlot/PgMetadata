@@ -1,9 +1,30 @@
 action
 extract
+	| regex cols ownertable |
 	self database getTables do: [ :table |
+		| constraint |
+		regex := '\{(.*)\}' asRegex.
 		(self runSQLWith: { table oid }) do: [ :result | 
-			
-			"result inspect.
-			Halt now."
+			"create the constraint instance"
+			ownertable := self database tableReferenceOf: (result atName: #referenced_table).
+			constraint := (constraintClasses at: (result atName: #contype)) 
+				oid: nil 
+				name: (result atName: #constraint_name) 
+				owner: ownertable
+				namespace: (self database schemaReferenceOf: (result atName: #namespace_oid)).
+			"add the column reference"
+			(result atName: #conkey) do: [ :num | 
+				constraint addColumn: (self database columnFrom: ownertable at: num)
+			].
+		
+"			regex matchesPrefix: (result atName: #conkey).
+			Halt now.
+			cols := regex subexpression: 2.
+			cols ifNotNil: [  
+				(cols isNotEmpty) ifTrue: [
+					(',' split: cols) collect: [ :v | v asInteger ] do: [ :num | constraint addColumn: (self database columnFrom: ownertable at: num) ] 
+				]
+			]."
+			self database addObject: constraint.
 		]
 	]

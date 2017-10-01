@@ -1,0 +1,3 @@
+identity
+isSqlForeignKeyConstraint
+	^false
