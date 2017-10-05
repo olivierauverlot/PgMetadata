@@ -1,1 +1,0 @@
-I'm a SQL entity (an object or a reference).

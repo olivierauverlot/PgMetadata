@@ -1,6 +1,6 @@
 action
 extract
-	| regex cols ownertable |
+	| regex ownertable |
 	self database getTables do: [ :table |
 		| constraint |
 		regex := '\{(.*)\}' asRegex.
@@ -17,14 +17,6 @@ extract
 				constraint addColumn: (self database columnFrom: ownertable at: num)
 			].
 		
-"			regex matchesPrefix: (result atName: #conkey).
-			Halt now.
-			cols := regex subexpression: 2.
-			cols ifNotNil: [  
-				(cols isNotEmpty) ifTrue: [
-					(',' split: cols) collect: [ :v | v asInteger ] do: [ :num | constraint addColumn: (self database columnFrom: ownertable at: num) ] 
-				]
-			]."
 			self database addObject: constraint.
 		]
 	]

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "OlivierAuverlot 7/6/2017 10:33",
-	"super" : "SqlEntity",
+	"super" : "SqlObject",
 	"category" : "PgMetadata-SQL-Model-References",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,11 +1,12 @@
 {
 	"commentStamp" : "OlivierAuverlot 6/2/2017 14:52",
-	"super" : "SqlEntity",
+	"super" : "Object",
 	"category" : "PgMetadata-SQL-Model-Objects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"owner",
 		"oid",
 		"name"
 	],

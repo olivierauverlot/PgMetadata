@@ -1,3 +1,0 @@
-identity
-isSqlObject
-	^false

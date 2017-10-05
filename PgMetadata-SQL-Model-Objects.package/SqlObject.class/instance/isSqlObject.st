@@ -1,3 +1,3 @@
 identity
 isSqlObject
-	^true
+	^false
