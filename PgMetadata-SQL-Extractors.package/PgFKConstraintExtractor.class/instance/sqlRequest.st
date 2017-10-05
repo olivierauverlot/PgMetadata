@@ -4,10 +4,10 @@ sqlRequest
 	connamespace as namespace_oid,
 	contype,
 	conname as constraint_name,
-	array_to_string(c.conkey, '','') AS num_constrained_columns,
-	c.conrelid as referenced_table,
-	array_to_string(c.confkey, '','') AS num_referenced_columns,
-	conkey
+	t.oid as constrained_table,
+	conkey as num_constrained_columns,
+	t2.oid as referenced_table,
+	c.confkey as num_referenced_columns
 FROM pg_constraint c
 	LEFT JOIN pg_class t  ON c.conrelid  = t.oid
 	LEFT JOIN pg_class t2 ON c.confrelid = t2.oid

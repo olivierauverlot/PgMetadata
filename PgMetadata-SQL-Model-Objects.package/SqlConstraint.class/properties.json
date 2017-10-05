@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"columns"
+		"constrainedColumns"
 	],
 	"name" : "SqlConstraint",
 	"type" : "normal"
