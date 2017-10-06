@@ -12,7 +12,7 @@ Metacello new
 
 ## How to use PgMetadata
 
-The class PgMetadata returns a collection of SqlObjects thats describe the SQL schema. 
+The class PgMetadata returns an instance of PgDatabase that describes the SQL schema. 
 
     | metadata sqlObjects |
     metadata := PgMetadata database: 'mydb' connection: (
@@ -23,4 +23,5 @@ The class PgMetadata returns a collection of SqlObjects thats describe the SQL s
 		user: 'username'
 		password: 'password'
     ).
-    sqlObjects := metadata extractMetadata.
+    pgDB := metadata extractMetadata.
+    sqlObjects := pgDB objects
