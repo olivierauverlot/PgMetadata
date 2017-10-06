@@ -1,9 +1,14 @@
 # PgMetadata
 Extracts the PostgreSQL metadata and build an SQL Model (In progress).
 
-## Dependencies
+## How to install
 
-PgMetadata requires the Garage framework. Don't forget to load it in your Pharo image!
+```
+Metacello new
+    baseline: 'PgMetadata';
+    repository: 'github://olivierauverlot/PgMetadata';
+    load
+```
 
 ## How to use PgMetadata
 
