@@ -5,6 +5,5 @@ defineDependencies: spec
 			spec
 				className: 'ConfigurationOfGarage';
 				version: #stable;
-				repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo60/main';
-				loads ];
+				repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo60/main' ];
 		yourself
