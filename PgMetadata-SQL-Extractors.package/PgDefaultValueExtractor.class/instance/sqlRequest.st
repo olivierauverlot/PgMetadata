@@ -6,5 +6,5 @@ sqlRequest
 	adsrc as content,
 	adbin as nodes 
 FROM pg_attrdef
-WHERE adrelid = {1}
+WHERE adrelid = {1} 
 '
