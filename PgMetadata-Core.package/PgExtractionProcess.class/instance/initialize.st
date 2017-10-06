@@ -13,10 +13,11 @@ steps := {
 	PgColumnExtractor.
 	PgFunctionExtractor.
 	PgTriggerExtractor.
-
-	"extract constraints"
 	PgFKConstraintExtractor.
-		
+
+	"extract default values"
+	PgDefaultValueExtractor.
+			
 	"extract references"
 	PgInheritanceReferencesExtractor.
 } asOrderedCollection.
