@@ -12,7 +12,8 @@
 		"dimensions",
 		"isPK",
 		"isNotNull",
-		"hasDefaultValue"
+		"hasDefaultValue",
+		"defaultValue"
 	],
 	"name" : "SqlColumn",
 	"type" : "normal"

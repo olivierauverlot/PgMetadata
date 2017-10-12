@@ -1,16 +1,13 @@
 {
-	"commentStamp" : "OlivierAuverlot 6/2/2017 14:52",
-	"super" : "Object",
+	"commentStamp" : "OlivierAuverlot 10/12/2017 10:57",
+	"super" : "SqlObject",
 	"category" : "PgMetadata-SQL-Model-Objects",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"owner",
-		"oid",
-		"name",
-		"referencedObjects"
+		"content"
 	],
-	"name" : "SqlObject",
+	"name" : "SqlDefaultValue",
 	"type" : "normal"
 }

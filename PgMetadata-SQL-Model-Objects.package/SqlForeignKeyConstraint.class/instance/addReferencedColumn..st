@@ -1,3 +1,3 @@
 action
 addReferencedColumn: aColumn
-	self referencedColumns add: aColumn
+	self addReferencedObject: aColumn

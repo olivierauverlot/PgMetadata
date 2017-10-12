@@ -1,0 +1,3 @@
+identity
+isSqlDefaultValue
+	^false
