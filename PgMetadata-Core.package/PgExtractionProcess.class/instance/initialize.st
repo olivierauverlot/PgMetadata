@@ -20,4 +20,7 @@ steps := {
 			
 	"extract references"
 	PgInheritanceReferencesExtractor.
+	
+	"extract internal referenced objects"
+	PgInternalReferencedObjectsExtractor
 } asOrderedCollection.
