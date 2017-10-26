@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"type"
+		"type",
+		"table",
+		"function"
 	],
 	"name" : "SqlTrigger",
 	"type" : "normal"

@@ -21,6 +21,12 @@ extract
 				(result atName: #num_referenced_columns) do: [ :num |
 					referencedTable := self database tableReferenceOf: (result atName: #referenced_table). 
 					constraint addReferencedColumn: (referencedTable columnAt: num).
+					
+					"adding referenced object into the referenced objects of the constrained objects"
+					(result atName: #num_constrained_columns) do: [ :n | 
+						(ownertable columnAt: n) addReferencedObject: (referencedTable columnAt: num).
+					].
+					"Halt now."					
 				]
 			].
 			
