@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PgNodeTreeParser",
+	"category" : "PgMetadata-Node-Tree-Parser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PgNodeTreeToDataStructure",
+	"type" : "normal"
+}

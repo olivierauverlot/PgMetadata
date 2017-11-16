@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "PgMetadata-Node-Tree-Parser-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"builder"
+	],
+	"name" : "PgNodeTreeToDataStructureTest",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PPCompositeParserTest",
+	"category" : "PgMetadata-Node-Tree-Parser-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PgNodeTreeParserTest",
+	"type" : "normal"
+}

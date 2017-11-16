@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "OlivierAuverlot 11/3/2017 12:06",
+	"super" : "PPCompositeParser",
+	"category" : "PgMetadata-Node-Tree-Parser",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"attributeAndValue",
+		"listname",
+		"attributeName",
+		"attributeValue",
+		"boolean",
+		"number",
+		"subList",
+		"list",
+		"byteArray"
+	],
+	"name" : "PgNodeTreeParser",
+	"type" : "normal"
+}

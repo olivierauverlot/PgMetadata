@@ -1,0 +1,4 @@
+tests-accessing
+testList
+	self parse: '{CONST :consttype 16 :consttypmod -1 :constcollid 0 :constlen 1 :constbyval true :constisnull false :location 72 :constvalue 1 [ 1 0 0 0 0 0 0 0 ]}' rule: #list.
+	self parse: '{FUNCEXPR :funcid 480 :funcresulttype 23 :funcretset false :funcvariadic false :funcformat 2 :funccollid 0 :inputcollid 0 :args ({FUNCEXPR :funcid 1574 :funcresulttype 20 :funcretset false :funcvariadic false :funcformat 0 :funccollid 0 :inputcollid 0 :args ({CONST :consttype 2205 :consttypmod -1 :constcollid 0 :constlen 4 :constbyval true :constisnull false :location 141 :constvalue 4 [ -89 -37 0 0 0 0 0 0 ]}) :location 133}) :location -1}' rule: #list.
