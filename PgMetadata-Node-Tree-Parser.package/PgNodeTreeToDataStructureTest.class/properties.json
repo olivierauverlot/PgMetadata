@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "TestCase",
-	"category" : "PgMetadata-Node-Tree-Parser-Tests",
+	"category" : "PgMetadata-Node-Tree-Parser-PgMetadata-Node-Tree-Parser-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
