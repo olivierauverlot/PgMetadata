@@ -16,7 +16,7 @@ extract
 					argtypes := ((func atName: #proargtypes) substrings: ' ') collect: [ :oid | oid asInteger ].
 
 					1 to: (argnames size) do: [ :i | 
-						| argname argtype |
+						| argtype |
 						argtype := self database addUniqueObject: (self getAllDatatypes detect: [ :datatype | datatype oid = (argtypes at: i) ]).
 						function addArgument: (SqlArgument name: (argnames at: i) datatype: argtype owner: function). 
 					]			
