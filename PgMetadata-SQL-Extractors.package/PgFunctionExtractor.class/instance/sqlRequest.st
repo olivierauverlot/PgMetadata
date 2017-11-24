@@ -11,7 +11,8 @@ sqlRequest
 	pg_language.lanname as prolangname,
 	prorettype,
 	pg_type.typname as prorettypename,
-	prosrc
+	prosrc,
+	proisagg
 FROM 	pg_proc,pg_type,pg_language,pg_namespace
 WHERE 
 	prorettype = pg_type.oid
