@@ -9,8 +9,8 @@ extract
 			] 
 			ifFalse: [
 				(func atName: #proisagg) 
-					ifTrue: [  function := SqlAggregateFunction oid: (func atName: #oid) name: (func atName: #proname) owner: self database. ]
-					ifFalse: [  function := SqlFunction oid: (func atName: #oid) name: (func atName: #proname) owner: self database ].
+					ifTrue: [ function := SqlAggregateFunction oid: (func atName: #oid) name: (func atName: #proname) owner: self database. ]
+					ifFalse: [ function := SqlFunction oid: (func atName: #oid) name: (func atName: #proname) owner: self database ].
 				argnames := func atName: #proargnames.
 				argnames ifNotNil: [  
 					argtypes := ((func atName: #proargtypes) substrings: ' ') collect: [ :oid | oid asInteger ].

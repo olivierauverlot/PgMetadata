@@ -11,3 +11,8 @@ metadata := PgMetadata database: 'appsi' connection: (
 ).
 sqlObjects := metadata extractMetadata.
 sqlObjects inspect.
+
+TODO
+---------
+* aggregate
+* index

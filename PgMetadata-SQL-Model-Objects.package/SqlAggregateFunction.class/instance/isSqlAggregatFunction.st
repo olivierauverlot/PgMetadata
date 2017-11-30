@@ -1,3 +1,0 @@
-identity
-isSqlAggregatFunction
-	^true
