@@ -1,3 +1,6 @@
+* cursors
+* aggregate
+
 I'm the main class of PgStudio.
 
 | metadata sqlObjects |

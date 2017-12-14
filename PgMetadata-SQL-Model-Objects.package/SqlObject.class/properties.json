@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "OlivierAuverlot 6/2/2017 14:52",
+	"commentStamp" : "OlivierAuverlot 12/14/2017 11:12",
 	"super" : "Object",
 	"category" : "PgMetadata-SQL-Model-Objects",
 	"classinstvars" : [ ],
@@ -9,7 +9,8 @@
 		"owner",
 		"oid",
 		"name",
-		"referencedObjects"
+		"referencedObjects",
+		"privateState"
 	],
 	"name" : "SqlObject",
 	"type" : "normal"
