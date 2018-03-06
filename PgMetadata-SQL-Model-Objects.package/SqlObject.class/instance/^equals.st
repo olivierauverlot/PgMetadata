@@ -1,3 +1,3 @@
 comparing
 = anObject
-	^ self class == anObject class and: [ self oid = anObject oid and: [ self name = anObject name ] ]
+	^ self class = anObject class and: [ self oid = anObject oid and: [ self name = anObject name and: [ self owner = anObject owner ] ] ]
