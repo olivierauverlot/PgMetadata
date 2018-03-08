@@ -8,7 +8,8 @@
 	"instvars" : [
 		"language",
 		"returnType",
-		"code"
+		"code",
+		"stub"
 	],
 	"name" : "SqlTriggerFunction",
 	"type" : "normal"

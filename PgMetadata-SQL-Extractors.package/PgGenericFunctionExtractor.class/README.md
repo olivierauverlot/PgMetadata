@@ -1,0 +1,1 @@
+I'm the generic function extractor (used to extract user functions and stub fonctions)

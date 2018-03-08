@@ -1,0 +1,1 @@
+I'm the stub function extractor.
