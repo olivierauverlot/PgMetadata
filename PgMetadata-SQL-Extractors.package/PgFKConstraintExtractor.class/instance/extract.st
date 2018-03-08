@@ -11,9 +11,10 @@ extract
 				name: (result atName: #constraint_name) 
 				owner: ownertable
 				namespace: (self database schemaReferenceOf: (result atName: #namespace_oid)).
-			"add the constrained column references"
-			(result atName: #num_constrained_columns) do: [ :num | 
-				constraint addConstrainedColumn: (ownertable columnAt: num).
+			"add the constrained column references, can be nil in case that the constraint is not applied on a column."
+			(result atName: #num_constrained_columns) ifNotNil: [
+				(result atName: #num_constrained_columns) do: [ :num | 
+					constraint addConstrainedColumn: (ownertable columnAt: num) ].
 			].
 		
 			"add the referenced column references"

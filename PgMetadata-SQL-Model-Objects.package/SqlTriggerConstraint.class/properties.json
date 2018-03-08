@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JulienDelplanque 3/8/2018 10:30",
+	"super" : "SqlConstraint",
+	"category" : "PgMetadata-SQL-Model-Objects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SqlTriggerConstraint",
+	"type" : "normal"
+}
