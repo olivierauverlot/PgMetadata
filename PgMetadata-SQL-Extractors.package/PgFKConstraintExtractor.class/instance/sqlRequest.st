@@ -7,7 +7,8 @@ sqlRequest
 	t.oid as constrained_table,
 	conkey as num_constrained_columns,
 	t2.oid as referenced_table,
-	c.confkey as num_referenced_columns
+	c.confkey as num_referenced_columns,
+	c.consrc as consrc
 FROM pg_constraint c
 	LEFT JOIN pg_class t  ON c.conrelid  = t.oid
 	LEFT JOIN pg_class t2 ON c.confrelid = t2.oid

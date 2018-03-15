@@ -11,6 +11,8 @@ extract
 				name: (result atName: #constraint_name) 
 				owner: ownertable
 				namespace: (self database schemaReferenceOf: (result atName: #namespace_oid)).
+			constraint class = SqlCheckConstraint ifTrue: [ 
+				constraint code: (result atName: #consrc) ].
 			"add the constrained column references, can be nil in case that the constraint is not applied on a column."
 			(result atName: #num_constrained_columns) ifNotNil: [
 				(result atName: #num_constrained_columns) do: [ :num | 
