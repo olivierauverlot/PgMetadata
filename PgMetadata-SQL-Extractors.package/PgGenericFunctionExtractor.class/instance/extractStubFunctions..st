@@ -17,10 +17,10 @@ extractStubFunctions: isStub
 				"Arguments and types are only extracted if function is not stub"
 				(isStub not and: [ argnames isNotNil ]) ifTrue: [  
 					argtypes := ((func atName: #proargtypes) substrings: ' ') collect: [ :oid | oid asInteger ].
-
+					
 					1 to: (argnames size) do: [ :i | 
 						| argtype |
-						argtype := self database addUniqueObject: (self getAllDatatypes detect: [ :datatype | datatype oid = (argtypes at: i) ]).
+						argtype := self database addUniqueObject: (self getAllDatatypes detect: [ :datatype | datatype oid = (argtypes at: (i min: argtypes size)) ]). self flag: 'This is a HACK to bypass problem with OUT parameters.'.
 						function addArgument: (SqlArgument name: (argnames at: i) datatype: argtype owner: function). 
 					]			
 				]
