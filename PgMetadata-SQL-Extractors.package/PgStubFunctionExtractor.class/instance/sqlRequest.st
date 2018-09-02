@@ -7,6 +7,7 @@ sqlRequest
 	pg_namespace.nspname as pronamespacename,
 	proargnames,
 	proargtypes,
+	proallargtypes,
 	prolang,
 	pg_language.lanname as prolangname,
 	prorettype,

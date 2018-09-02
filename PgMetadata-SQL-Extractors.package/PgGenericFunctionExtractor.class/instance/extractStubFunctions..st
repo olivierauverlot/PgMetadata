@@ -12,15 +12,15 @@ extractStubFunctions: isStub
 				oid: (func atName: #prolang)
 				name: (func atName: #prolangname)
 				owner: owner.
-			function language: (self database addUniqueObject: language).
+			function language: (self addUniqueObject: language).
 			namespace := SqlNamespace
 				oid: (func atName: #pronamespace)
 				name: (func atName: #pronamespacename)
 				owner: owner.
-			function namespace: (self database addUniqueObject: namespace).
+			function namespace: (self addUniqueObject: namespace).
 			resultType := SqlDatatype
 				oid: (func atName: #prorettype)
 				name: (func atName: #prorettypename)
 				owner: owner.
-			function returnType: (self database addUniqueObject: resultType).
-			self database addObject: function ]
+			function returnType: (self addUniqueObject: resultType).
+			self addUniqueObject: function ]
