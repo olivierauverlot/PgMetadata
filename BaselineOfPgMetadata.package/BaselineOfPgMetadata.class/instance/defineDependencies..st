@@ -1,9 +1,8 @@
 baselines
 defineDependencies: spec
 	^ spec
-		project: 'Garage' with: [
+		baseline: 'Garage' with: [ 
 			spec
-				className: 'ConfigurationOfGarage';
-				version: #stable;
-				repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo60/main' ];
+				repository: 'github://pharo-rdbms/garage:master';
+				loads: #('postgresV2') ];
 		yourself
