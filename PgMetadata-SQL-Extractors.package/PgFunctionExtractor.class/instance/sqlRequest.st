@@ -27,4 +27,4 @@ AND 	pronamespace IN (
 		format:
 			{(self database postgresql databaseMajorVersion >= 11
 				ifTrue: [ 'prokind' ]
-				ifFalse: [ 'proisagg as prokind' ])}
+				ifFalse: [ 'case when proisagg then $$a$$ when proiswindow then $$w$$ else $$f$$ end as prokind' ])}
