@@ -1,6 +1,6 @@
 parameters
 sqlRequest
-	^'SELECT 
+	^ 'SELECT 
 	pg_proc.oid,
 	proname,
 	pronamespace,
@@ -13,7 +13,7 @@ sqlRequest
 	prorettype,
 	pg_type.typname as prorettypename,
 	prosrc,
-	proisagg
+	{1}
 FROM 	pg_proc,pg_type,pg_language,pg_namespace
 WHERE 
 	prorettype = pg_type.oid
@@ -24,3 +24,7 @@ AND 	pronamespace IN (
 	FROM pg_namespace
 	WHERE nspname NOT IN
 	(''pg_toast'',''pg_temp_1'',''pg_toast_temp_1'',''pg_catalog'',''information_schema''))'
+		format:
+			{(self database postgresql databaseMajorVersion >= 11
+				ifTrue: [ 'prokind' ]
+				ifFalse: [ 'proisagg as prokind' ])}

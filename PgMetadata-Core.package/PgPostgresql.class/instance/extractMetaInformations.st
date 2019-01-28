@@ -18,6 +18,11 @@ extractMetaInformations
 			| versionParts major |
 			versionParts := (versionString atIndex: 1) splitOn: $..
 			major := versionParts first asNumber.
-			databaseMajorVersion := major > 9
-				ifTrue: [ major ]
-				ifFalse: [ ('.' join: {major asString. versionParts second.}) asNumber ] ]
+			self
+				databaseMajorVersion:
+					(major > 9
+						ifTrue: [ major ]
+						ifFalse: [ ('.'
+								join:
+									{major asString.
+									versionParts second}) asNumber ]) ]
