@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JulienDelplanque 2/10/2019 14:48",
+	"super" : "SqlColumnsContainer",
+	"category" : "PgMetadata-SQL-Model-Objects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SqlForeignTable",
+	"type" : "normal"
+}
