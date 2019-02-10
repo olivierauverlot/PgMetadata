@@ -1,4 +1,4 @@
-as yet unclassified
+action
 addUniqueStubObject: anObject 
 	^ self objects "Stub objects have no name."
 		detect: [ :object | object oid = anObject oid and: [ object name = anObject name ] ]
