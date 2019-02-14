@@ -1,4 +1,4 @@
-as yet unclassified
+action
 addStubObject: anObject 
 	objects add: anObject.
 	^anObject

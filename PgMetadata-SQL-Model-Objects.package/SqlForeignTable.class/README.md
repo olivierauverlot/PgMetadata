@@ -1,0 +1,1 @@
+I model a foreign table, a table for which the data source is external to the DB.

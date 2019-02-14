@@ -7,6 +7,7 @@ steps := {
 	PgExtensionExtractor.
 	PgNamespaceExtractor.
 	PgStubFunctionExtractor.
+	PgForeignTableExtractor.
 	PgSequenceExtractor.
 	PgTableExtractor.
 	PgViewExtractor.
