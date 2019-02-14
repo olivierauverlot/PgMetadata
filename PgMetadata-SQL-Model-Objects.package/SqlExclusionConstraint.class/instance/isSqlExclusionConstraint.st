@@ -1,0 +1,3 @@
+identity
+isSqlExclusionConstraint
+	^true
