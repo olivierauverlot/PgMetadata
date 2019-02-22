@@ -15,8 +15,10 @@ extract
 				constraint code: (result atName: #consrc) ].
 			"add the constrained column references, can be nil in case that the constraint is not applied on a column."
 			(result atName: #num_constrained_columns) ifNotNil: [
-				(result atName: #num_constrained_columns) do: [ :num | 
-					constraint addConstrainedColumn: (ownertable columnAt: num) ].
+				(result atName: #num_constrained_columns) do: [ :num |
+					"0 means it is a function like: tstzrange(start_time, expiration_time, '()') WITH &&"
+					num = 0 ifFalse:
+					[constraint addConstrainedColumn: (ownertable columnAt: num)] ].
 			].
 		
 			"add the referenced column references"

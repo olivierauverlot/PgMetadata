@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "DmitryDorofeev 1/29/2019 23:42",
+	"super" : "SqlConstraint",
+	"category" : "PgMetadata-SQL-Model-Objects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"code"
+	],
+	"name" : "SqlExclusionConstraint",
+	"type" : "normal"
+}

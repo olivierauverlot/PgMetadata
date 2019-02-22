@@ -1,7 +1,7 @@
 action
 extractNonTriggerFunctionFrom: func withOwner: owner toBeStub: isStub
 	| argtypes function argnames |
-	function := (func atName: #proisagg)
+	function := (func atName: #prokind) = 'a'
 		ifTrue: [ SqlAggregateFunction
 				oid: (func atName: #oid)
 				name: (func atName: #proname)

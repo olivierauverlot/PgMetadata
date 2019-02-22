@@ -1,0 +1,1 @@
+I am SQL Exclusion Constraint
