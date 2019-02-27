@@ -11,6 +11,7 @@ sqlRequest
 	prolang,
 	pg_language.lanname as prolangname,
 	prorettype,
+	proretset,
 	pg_type.typname as prorettypename,
 	prosrc,
 	{1}

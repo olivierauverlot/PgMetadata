@@ -20,7 +20,7 @@ extractStubFunctions: isStub
 			function namespace: (self addUniqueObject: namespace).
 			resultType := SqlDatatype
 				oid: (func atName: #prorettype)
-				name: (func atName: #prorettypename)
+				name: ((func atName: #proretset) ifTrue: [ 'setof ' ] ifFalse: [ '' ]) , (func atName: #prorettypename)
 				owner: owner.
 			function returnType: (self addUniqueObject: resultType).
 			self addUniqueObject: function ]
