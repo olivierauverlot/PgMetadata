@@ -1,3 +1,3 @@
 description
 isInstead
-	^(self type bitAnd: 64) ~= 0
+	^(self type bitAnd: 2r1000000) ~= 0

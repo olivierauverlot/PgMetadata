@@ -1,3 +1,3 @@
 description
 isBefore
-	^(self type bitAnd: 2) ~= 0
+	^(self type bitAnd: 2r10) ~= 0

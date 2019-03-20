@@ -1,3 +1,3 @@
 description
 isUpdate
-	^(self type bitAnd: 16) ~= 0
+	^(self type bitAnd: 2r10000) ~= 0

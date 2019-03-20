@@ -1,3 +1,3 @@
 description
 isTruncate
-	^(self type bitAnd: 32) ~= 0
+	^(self type bitAnd: 2r100000) ~= 0

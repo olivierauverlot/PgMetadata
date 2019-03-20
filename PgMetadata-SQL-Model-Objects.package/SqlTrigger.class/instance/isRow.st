@@ -1,3 +1,3 @@
 description
 isRow
-	^(self type bitAnd: 1) ~= 0
+	^(self type bitAnd: 2r1) ~= 0

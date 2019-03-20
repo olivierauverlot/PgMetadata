@@ -1,3 +1,3 @@
 description
 isInsert
-	^(self type bitAnd: 4) ~= 0
+	^(self type bitAnd: 2r100) ~= 0
