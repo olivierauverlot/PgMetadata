@@ -3,6 +3,6 @@ defineDependencies: spec
 	^ spec
 		baseline: 'Garage' with: [ 
 			spec
-				repository: 'github://pharo-rdbms/garage:master';
+				repository: 'github://juliendelplanque/garage:master';
 				loads: #('postgresV2') ];
 		yourself
